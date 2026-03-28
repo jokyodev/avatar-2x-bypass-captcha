@@ -1,0 +1,8 @@
+- Tạo lisense key
+- Xóa lisense key
+- Update lisense key
+- Block lisense key 
+- Unblock lisense key 
+
+
+- ip dev : ::ffff:127.0.0.1
