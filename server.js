@@ -1,6 +1,5 @@
 const express = require('express')
 const dotenv = require('dotenv')
-const verifyToken = require('./middleware/verifyToken')
 const rateLimit = require('express-rate-limit')
 const requestIp = require('request-ip')
 const cors = require('cors')
@@ -56,5 +55,5 @@ const PORT = process.env.PORT || 3000
 
 app.listen(8080, '0.0.0.0', () => {
   connectDB()
-  console.log('Server is running on port ' + PORTverifyToken)
+  console.log('Server is running on port ' + PORT)
 })
