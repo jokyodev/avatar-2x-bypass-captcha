@@ -19,6 +19,7 @@ exports.getAllLicense = async (req, res, next) => {
 exports.getOneLicense = async (req, res, next) => {
   //complete
   const { id } = req.params
+  console.log('HEHE')
 
   try {
     res.status(200).json({ success: true, data: 'free' })

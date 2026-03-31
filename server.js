@@ -42,6 +42,9 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json({ limit: '50mb' }))
 app.use(express.urlencoded({ limit: '50mb' }))
 
+app.use('/api/v2/f', async (req, res) => {
+  console.log('TEST')
+})
 app.use('/api/v1/license/', licenseRoutes) // no-need verify
 app.use('/api/v1/teaching/', techingRoutes) // no-need verify
 app.use('/api/v1/user/', userRoutes) // no-need verify
@@ -53,7 +56,7 @@ app.use('/api/protect', protectRoutes)
 app.use(errorHandler)
 const PORT = process.env.PORT || 3000
 
-app.listen(8080, '0.0.0.0', () => {
-  connectDB()
+app.listen(3000, '0.0.0.0', () => {
+  // connectDB()
   console.log('Server is running on port ' + PORT)
 })
